@@ -1,0 +1,26 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+  
+      <form class="example-form">
+  
+    <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Employee ID"  [(ngModel)] = "employee.employeeId" name="employee.employeeId" readonly>
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Employee Type"  [(ngModel)] = "employee.employeeType" name="employee.employeeType" readonly> 
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Working Days" [(ngModel)] = "employee.workingDays" name="employee.workingDays" required>
+            <mat-hint align="start"><strong>Enter Value between 0 to 260</strong> </mat-hint>
+          </mat-form-field>
+  
+        </mat-card-content>
+  
+        <button type="button" mat-stroked-button color="accent" class="btn-block" (click) = "update()">Update</button>
+  
+      </form>
+    </mat-card>
+  </div>
